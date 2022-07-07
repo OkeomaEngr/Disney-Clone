@@ -34,3 +34,28 @@ for(let i = 0; i<3; i++){
 setInterval(() => {
     createSlide();
 },3000);
+
+
+//new 
+
+function video1(){
+    //creating a new element iframe
+    let iframe = document.createElement("iframe");   
+    //set src
+    iframe.src = "http://www.youtube.com/embed/yRUAzGQ3nSY";
+    //get element that is being chnaged
+    let oldvid = document.getElementById("insideOut");
+    //replacing old element with another 
+    oldvid.replaceChild(iframe, oldvid.childNodes[1]);
+}
+
+function video2(){
+    //creating a new element iframe
+    let iframe = document.createElement("iframe");   
+    //set src
+    iframe.src = "https://www.youtube.com/embed/VK2QbXssjJ0";
+    //get element that is being chnaged
+    let oldvid = document.getElementById("bao");
+    //replacing old element with another 
+    oldvid.replaceChild(iframe, oldvid.childNodes[1]);
+}
